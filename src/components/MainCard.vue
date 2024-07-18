@@ -95,7 +95,7 @@ img {
   flex-direction: row;
   background-color: #8fa6f0;
   border-radius: 25px;
-  width: 80%;
+  width: 90%;
   box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
 }
 
@@ -166,5 +166,44 @@ img {
 .projects-button a{
   text-decoration: none;
   color: #ffffff
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-one,
+  .container-two {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .profile img {
+    height: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-me p {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .logos img {
+    height: 2rem;
+    margin: 5px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .projects-button {
+    width: 80%;
+    margin: 10px 0;
+  }
 }
 </style>
